@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>شهادة حضور دورة «عند الطوارئ» | سول لحلول الأعمال</title>
+  <meta name="description" content="استخرج شهادة حضورك لدورة «عند الطوارئ» برقم جوالك.">
+  <meta name="theme-color" content="#444DFD">
+  <link rel="preload" href="assets/fonts/bahij-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/certificate.jpg" as="image">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="module" src="assets/app.js"></script>
+</head>
+<body>
+  <main class="page">
+    <header class="brand">
+      <img src="assets/sol-lockup.png" alt="سول لحلول الأعمال" width="168" height="38">
+      <img src="assets/sol-logo.png" alt="SOL" width="58" height="40">
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">شهادة حضور دورة تدريبية</p>
+      <h1>«عند الطوارئ»</h1>
+      <p class="date">الأربعاء 11 نوفمبر 2026م</p>
+    </section>
+
+    <form id="lookup" class="card" novalidate>
+      <label for="phone">رقم الجوال المسجّل في نموذج الحضور</label>
+      <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national"
+             dir="ltr" placeholder="05XXXXXXXX" aria-describedby="phone-msg" required>
+      <p id="phone-msg" class="msg" role="alert" aria-live="polite"></p>
+      <button type="submit" class="btn primary" id="submit">
+        <span class="label">اعرض شهادتي</span>
+      </button>
+    </form>
+
+    <section id="result" class="card result" hidden aria-live="polite">
+      <p class="hello">الشهادة باسم</p>
+      <p class="name" id="name"></p>
+      <img id="preview" class="preview" alt="معاينة الشهادة">
+      <div class="actions">
+        <a class="btn primary" id="dl-pdf" download>تحميل PDF</a>
+        <a class="btn secondary" id="dl-img" download>تحميل صورة</a>
+      </div>
+      <p class="hint">على الجوال يمكنك أيضًا الضغط مطولًا على الصورة لحفظها في الألبوم.</p>
+      <button type="button" class="link" id="again">عرض شهادة برقم آخر</button>
+    </section>
+
+    <footer class="foot">شركة سول لحلول الأعمال</footer>
+  </main>
+  <noscript><p class="noscript">يتطلب عرض الشهادة تفعيل JavaScript في المتصفح.</p></noscript>
+</body>
+</html>

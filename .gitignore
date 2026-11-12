@@ -1,0 +1,7 @@
+# Form responses and name fixes: personal data, never commit
+private/
+# Local tooling
+.claude/
+node_modules/
+.DS_Store
+Thumbs.db
